@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>Create MVVM architecture with table view integrated.</string>
+	<key>Summary</key>
+	<string>Create MVVM architecture with table view integrated.</string>
+	<key>CFBundleExecutable</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>SortOrder</key>
+	<string>30</string>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.swift-source</string>
+	</array>
+	<key>DefaultCompletionName</key>
+	<string>File</string>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.swift</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>baseName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Base name:</string>
+			<key>Description</key>
+			<string>Base name of MVVM</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>viewControllerName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>View Controller Name:</string>
+			<key>Default</key>
+			<string>___VARIABLE_baseName:identifier___ViewController</string>
+			<key>Description</key>
+			<string>The name of the view controller</string>
+			<key>Type</key>
+			<string>static</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>viewModelName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>View Model Name:</string>
+			<key>Default</key>
+			<string>___VARIABLE_baseName:identifier___ViewModel</string>
+			<key>Description</key>
+			<string>The name of the view model</string>
+			<key>Type</key>
+			<string>static</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>tableViewCellName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>TableView Cell Name:</string>
+			<key>Default</key>
+			<string>___VARIABLE_baseName:identifier___TableViewCell</string>
+			<key>Description</key>
+			<string>The name of the table view cell</string>
+			<key>Type</key>
+			<string>static</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>dataTypeClass</string>
+			<key>Required</key>
+			<false/>
+			<key>Name</key>
+			<string>Data type class:</string>
+			<key>Default</key>
+			<string>&lt;#DataTypeClass#&gt;</string>
+			<key>Description</key>
+			<string>The Data type class name. Example : Int, String, FOO.</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>

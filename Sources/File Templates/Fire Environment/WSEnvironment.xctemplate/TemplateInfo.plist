@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>Create an environment ready to use for your project with 4 environments : Debug, Recette, Pilote, Production. A static function was added in URLComponents class to make easy to build requests with your environment.</string>
+	<key>Summary</key>
+	<string>Create an environment ready to use for your project.</string>
+	<key>CFBundleExecutable</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>SortOrder</key>
+	<string>30</string>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.swift-source</string>
+	</array>
+	<key>DefaultCompletionName</key>
+	<string>File</string>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.swift</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>DebugURL</string>
+			<key>Required</key>
+			<false/>
+			<key>Name</key>
+			<string>Debug URL:</string>
+			<key>Description</key>
+			<string>Url to use for debug environment.</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>RecetteURL</string>
+			<key>Required</key>
+			<false/>
+			<key>Name</key>
+			<string>Recette URL:</string>
+			<key>Description</key>
+			<string>Url to use for recette environment.</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>PiloteURL</string>
+			<key>Required</key>
+			<false/>
+			<key>Name</key>
+			<string>Pilote URL:</string>
+			<key>Description</key>
+			<string>Url to use for pilote environment.</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>ProductionURL</string>
+			<key>Required</key>
+			<false/>
+			<key>Name</key>
+			<string>production URL:</string>
+			<key>Description</key>
+			<string>Url to use for production environment.</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>

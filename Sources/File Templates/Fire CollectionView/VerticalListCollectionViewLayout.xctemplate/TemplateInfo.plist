@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>Create a CollectionViewLayout that sets items vertically as a TableView. It uses self-sizing to have cells with height matching with constraints Auto-Layout.</string>
+	<key>Summary</key>
+	<string>CollectionViewLayout that sets its cells as a TableView.</string>
+	<key>CFBundleExecutable</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>SortOrder</key>
+	<string>30</string>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.swift-source</string>
+	</array>
+	<key>DefaultCompletionName</key>
+	<string>File</string>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.swift</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>DataSourceProtocol</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Name DataSource protocol:</string>
+			<key>Description</key>
+			<string>Name of DataSource protocol</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>CellPadding</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>CellPadding:</string>
+			<key>Description</key>
+			<string>Padding between cells in Float</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>

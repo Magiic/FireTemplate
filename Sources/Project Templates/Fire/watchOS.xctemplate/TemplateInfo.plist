@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.crossPlatform_watchOSComponent</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.bundleBase</string>
+		<string>com.apple.dt.unit.crossPlatformBase_watchOS</string>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.watchkit2.watchkitapp</string>
+			<key>ProductType</key>
+			<string>com.apple.product-type.application.watchapp2</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>IBSC_MODULE</key>
+				<string>___VARIABLE_productName:identifier____Extension</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___.watchkitapp</string>
+			</dict>
+			<key>BuildPhases</key>
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>Resources</string>
+				</dict>
+			</array>
+			<key>ProductBuildPhaseInjections</key>
+			<array>
+				<dict>
+					<key>TargetIdentifier</key>
+					<string>com.apple.dt.iosApplicationTarget</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>Components</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>com.apple.dt.unit.crossPlatformSceneKitGameExtension_watchOS</string>
+			<key>Name</key>
+			<string>___PACKAGENAME___ Extension</string>
+			<key>ProductBuildPhaseInjections</key>
+			<array>
+				<dict>
+					<key>TargetIdentifier</key>
+					<string>com.apple.dt.watchkit2.watchkitapp</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Swift</key>
+				<array>
+					<dict>
+						<key>Targets</key>
+						<array>
+							<dict>
+								<key>SharedSettings</key>
+								<dict>
+									<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
+									<string>YES</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</array>
+	<key>Nodes</key>
+	<array>
+		<string>Base.lproj/Interface.storyboard</string>
+		<string>Info.plist:WatchApp</string>
+		<string>Info.plist:WatchAppBundleIdentifier</string>
+		<string>Info.plist:WatchAppDisplayName</string>
+		<string>Info.plist:PackageType</string>
+		<string>Info.plist:WatchAppOrientations</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>Base.lproj/Interface.storyboard</key>
+		<dict>
+			<key>Path</key>
+			<string>Interface.storyboard</string>
+		</dict>
+		<key>Info.plist:WatchApp</key>
+		<string>&lt;key&gt;WKCompanionAppBundleIdentifier&lt;/key&gt;
+&lt;string&gt;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___&lt;/string&gt;
+&lt;key&gt;WKWatchKitApp&lt;/key&gt;
+&lt;true/&gt;
+</string>
+		<key>Info.plist:WatchAppBundleIdentifier</key>
+		<string>&lt;key&gt;CFBundleIdentifier&lt;/key&gt;
+&lt;string&gt;$(PRODUCT_BUNDLE_IDENTIFIER)&lt;/string&gt;
+</string>
+		<key>Info.plist:WatchAppDisplayName</key>
+		<string>&lt;key&gt;CFBundleDisplayName&lt;/key&gt;
+&lt;string&gt;___VARIABLE_productName___&lt;/string&gt;
+</string>
+		<key>Info.plist:PackageType</key>
+		<string>&lt;key&gt;CFBundlePackageType&lt;/key&gt;
+&lt;string&gt;APPL&lt;/string&gt;
+</string>
+		<key>Info.plist:WatchAppOrientations</key>
+		<string>&lt;key&gt;UISupportedInterfaceOrientations&lt;/key&gt;
+&lt;array&gt;
+    &lt;string&gt;UIInterfaceOrientationPortrait&lt;/string&gt;
+    &lt;string&gt;UIInterfaceOrientationPortraitUpsideDown&lt;/string&gt;
+&lt;/array&gt;
+</string>
+	</dict>
+</dict>
+</plist>

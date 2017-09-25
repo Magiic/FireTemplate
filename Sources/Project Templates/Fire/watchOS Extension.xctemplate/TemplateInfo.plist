@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.crossPlatformExtension_watchOS</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.appextensionbase</string>
+		<string>com.apple.dt.unit.crossPlatformBase_watchOS</string>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.watchkit2.watchkitextension</string>
+			<key>ProductType</key>
+			<string>com.apple.product-type.watchkit2-extension</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>PRODUCT_NAME</key>
+				<string>___VARIABLE_productName___ Extension</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___.watchkitapp.watchkitextension</string>
+			</dict>
+		</dict>
+	</array>
+	<key>Nodes</key>
+	<array>
+		<string>Info.plist:ExtensionDelegate</string>
+		<string>Info.plist:WatchKitExtensionBundleIdentifier</string>
+		<string>Info.plist:WatchKitExtension</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>Info.plist:ExtensionDelegate</key>
+		<string>&lt;key&gt;WKExtensionDelegateClassName&lt;/key&gt;
+&lt;string&gt;___VARIABLE_moduleNamePrefixForClasses:XML___ExtensionDelegate&lt;/string&gt;
+</string>
+		<key>Info.plist:WatchKitExtension</key>
+		<string>&lt;key&gt;NSExtension&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;NSExtensionPointIdentifier&lt;/key&gt;
+    &lt;string&gt;com.apple.watchkit&lt;/string&gt;
+    &lt;key&gt;NSExtensionAttributes&lt;/key&gt;
+    &lt;dict&gt;
+        &lt;key&gt;WKAppBundleIdentifier&lt;/key&gt;
+        &lt;string&gt;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___.watchkitapp&lt;/string&gt;
+    &lt;/dict&gt;
+&lt;/dict&gt;
+</string>
+		<key>Info.plist:WatchKitExtensionBundleIdentifier</key>
+		<string>&lt;key&gt;CFBundleIdentifier&lt;/key&gt;
+&lt;string&gt;$(PRODUCT_BUNDLE_IDENTIFIER)&lt;/string&gt;
+&lt;key&gt;CFBundleShortVersionString&lt;/key&gt;
+&lt;string&gt;1.0&lt;/string&gt;
+&lt;key&gt;CFBundleVersion&lt;/key&gt;
+&lt;string&gt;1&lt;/string&gt;
+</string>
+	</dict>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Objective-C</key>
+				<dict>
+					<key>Nodes</key>
+					<array>
+						<string>InterfaceController.h</string>
+						<string>InterfaceController.m</string>
+						<string>ExtensionDelegate.h</string>
+						<string>ExtensionDelegate.m</string>
+					</array>
+					<key>Definitions</key>
+					<dict>
+						<key>InterfaceController.h</key>
+						<dict>
+							<key>Path</key>
+							<string>SceneKit_InterfaceController.h</string>
+							<key>SortOrder</key>
+							<integer>1</integer>
+						</dict>
+						<key>InterfaceController.m</key>
+						<dict>
+							<key>Path</key>
+							<string>SceneKit_InterfaceController.m</string>
+							<key>SortOrder</key>
+							<integer>2</integer>
+						</dict>
+						<key>ExtensionDelegate.h</key>
+						<dict>
+							<key>Path</key>
+							<string>ExtensionDelegate.h</string>
+							<key>SortOrder</key>
+							<integer>3</integer>
+						</dict>
+						<key>ExtensionDelegate.m</key>
+						<dict>
+							<key>Path</key>
+							<string>ExtensionDelegate.m</string>
+							<key>SortOrder</key>
+							<integer>4</integer>
+						</dict>
+					</dict>
+				</dict>
+				<key>Swift</key>
+				<dict>
+					<key>Nodes</key>
+					<array>
+						<string>InterfaceController.swift</string>
+						<string>ExtensionDelegate.swift</string>
+					</array>
+					<key>Definitions</key>
+					<dict>
+						<key>InterfaceController.swift</key>
+						<dict>
+							<key>Path</key>
+							<string>SceneKit_InterfaceController.swift</string>
+							<key>SortOrder</key>
+							<integer>1</integer>
+						</dict>
+						<key>ExtensionDelegate.swift</key>
+						<dict>
+							<key>Path</key>
+							<string>ExtensionDelegate.swift</string>
+							<key>SortOrder</key>
+							<integer>2</integer>
+						</dict>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

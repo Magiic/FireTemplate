@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>Create an environment ready to use for your project with 4 environments : Debug, Recette, Pilote, Production. A static function was added in URLComponents class to make easy to build requests with your environment.</string>
+	<key>Summary</key>
+	<string>Create an environment ready to use for your project.</string>
+	<key>CFBundleExecutable</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>SortOrder</key>
+	<string>30</string>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.swift-source</string>
+	</array>
+	<key>DefaultCompletionName</key>
+	<string>File</string>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.swift</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>baseName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Base name:</string>
+			<key>Description</key>
+			<string>Base name of MVVM</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>viewControllerName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>View Controller Name:</string>
+			<key>Default</key>
+			<string>___VARIABLE_baseName:identifier___ViewController</string>
+			<key>Description</key>
+			<string>The name of the view controller</string>
+			<key>Type</key>
+			<string>static</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>viewModelName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>View Model Name:</string>
+			<key>Default</key>
+			<string>___VARIABLE_baseName:identifier___ViewModel</string>
+			<key>Description</key>
+			<string>The name of the view model</string>
+			<key>Type</key>
+			<string>static</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>
