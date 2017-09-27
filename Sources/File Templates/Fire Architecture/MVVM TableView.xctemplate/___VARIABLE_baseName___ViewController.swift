@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___: ViewController {
+class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
