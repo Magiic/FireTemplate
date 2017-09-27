@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___: ViewController {
+class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
@@ -35,8 +35,7 @@ class ___FILEBASENAMEASIDENTIFIER___: ViewController {
 
     private func registerCells() {
         let nib = UINib(nibName: "___VARIABLE_collectionViewCellName___", bundle: nil)
-        collectionView
-        tableView.register(nib, forCellWithReuseIdentifier: ___VARIABLE_collectionViewCellName___Identifier)
+        collectionView.register(nib, forCellWithReuseIdentifier: ___VARIABLE_collectionViewCellName___Identifier)
     }
 
 }
