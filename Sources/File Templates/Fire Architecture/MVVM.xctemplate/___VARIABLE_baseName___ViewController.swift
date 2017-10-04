@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___: ViewController {
+class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
-    var viewModel: ___VARIABLE_baseName___ViewModel!
+    var viewModel: ___VARIABLE_baseName___ViewModel = ___VARIABLE_baseName___ViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
